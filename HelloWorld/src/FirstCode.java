@@ -1,6 +1,11 @@
 
 public class FirstCode {
 	public static void main(String args[]) {
-		System.out.println("Testing 123");
+	
+		int loop = 1;
+		while (loop <= 10) {
+			System.out.println("hello");
+			loop++;
+		}
 	}
 }
