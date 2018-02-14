@@ -3,8 +3,12 @@ class Calc {
 	int num2;
 	int result;
 	
-	public void perform() {
-		result = num1 + num2;
+	public int perform(int extra, int prod) { //local variable
+		result = (num1 + num2 + extra)*prod;
+		if(result>50)
+			return 1;
+		else 
+			return 0;
 	}
 }
 
@@ -15,8 +19,8 @@ public class ObjectDemo {
 		obj.num1 = 3;
 		obj.num2 = 5;
 		
-		obj.perform();
-		System.out.println(obj.result);
+		int k = obj.perform(2,3);
+		System.out.println(k);
 		
 	}
 }
